@@ -146,7 +146,7 @@ header {
   justify-content: space-between;
 }
 
-.greeting-text {
+.center-text {
   color: red;
   margin: auto auto;
   position: static;
