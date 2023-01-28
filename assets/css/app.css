@@ -167,18 +167,31 @@ header nav a {
   padding: 4px;
 }
 
+.center-text p.greeting {
+  font-weight: 900;
+  font-size: 2.25rem;
+  margin: 0;
+  padding-bottom: 16px;
+}
 .center-text {
-  color: red;
   margin: auto auto;
   position: static;
+  font-weight: 700;
+  font-size: 2rem;
+  font-variation-settings: "WONK" 1, "SOFT" 55, "opsz" 78;
 }
 
 footer {
   display: flex;
   gap: 50px;
   justify-content: space-between;
+  padding-left: 20px;
+  font-size: 2rem;
 }
 
 .footer-title {
   min-width: fit-content;
+}
+.footer-text {
+  max-width: 450px;
 }
