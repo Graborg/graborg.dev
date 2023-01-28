@@ -171,10 +171,16 @@ header nav a {
   font-weight: 900;
   font-size: 2.25rem;
   margin: 0;
-  padding-bottom: 16px;
+  padding: 4px 72px 4px 8px;
+  width: fit-content;
+  box-shadow: 0 0 0 8px hsl(169, 40%, 67%), 8px 8px 0 8px hsl(1, 82%, 67%);
 }
+
 .center-text {
   margin: auto auto;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
   position: static;
   font-weight: 700;
   font-size: 2rem;
@@ -187,11 +193,24 @@ footer {
   justify-content: space-between;
   padding-left: 20px;
   font-size: 2rem;
+  padding-bottom: 32px;
 }
 
 .footer-title {
   min-width: fit-content;
 }
+
 .footer-text {
-  max-width: 450px;
+  max-width: 650px;
+}
+.purple-bold,
+.red-bold {
+  display: inline;
+  font-weight: 500;
+}
+.purple-bold {
+  color: #6e4a7e;
+}
+.red-bold {
+  color: #ed5051;
 }
