@@ -410,11 +410,21 @@ h6 {
 }
 
 .container {
-  margin: 0 auto;
-  max-width: 80rem;
-  padding: 0 2rem;
+  /* margin: 0 auto; */
+  /* max-width: 80rem; */
+  /* padding: 0 2rem; */
+  /* position: relative; */
+  /* width: 100%; */
   position: relative;
-  width: 100%;
+  /* max-width: min(100%, calc(1200px + 32px * 2)); */
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  @media (min-width: calc(1100 / 16rem)) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 select {
   width: auto;

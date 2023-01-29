@@ -148,6 +148,9 @@ html,
   display: flex;
   flex-direction: column;
 }
+.wrapper {
+  justify-content: space-between;
+}
 
 header {
   background-color: ;
@@ -177,11 +180,12 @@ header nav a {
 }
 
 .center-text {
-  margin: auto auto;
+  left: calc(30% - 60px);
   display: flex;
+  position: relative;
   flex-direction: column;
+  width: fit-content;
   gap: 28px;
-  position: static;
   font-weight: 700;
   font-size: 2rem;
   font-variation-settings: "WONK" 1, "SOFT" 55, "opsz" 78;
@@ -190,8 +194,7 @@ header nav a {
 footer {
   display: flex;
   gap: 50px;
-  justify-content: space-between;
-  padding-left: 20px;
+  justify-content: space-around;
   font-size: 2rem;
   padding-bottom: 32px;
 }
@@ -201,8 +204,9 @@ footer {
 }
 
 .footer-text {
-  max-width: 650px;
+  max-width: 1000px;
 }
+
 .purple-bold,
 .red-bold {
   display: inline;
