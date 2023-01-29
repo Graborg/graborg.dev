@@ -54,6 +54,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: graborg/graborg.dev
+          tags: user/app:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
