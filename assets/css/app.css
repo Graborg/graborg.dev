@@ -193,7 +193,7 @@ header nav a {
 
 footer {
   display: flex;
-  gap: 50px;
+  gap: 60px;
   justify-content: space-around;
   font-size: 2rem;
   padding-bottom: 32px;
@@ -204,7 +204,7 @@ footer {
 }
 
 .footer-text {
-  max-width: 1000px;
+  max-width: 60%;
 }
 
 .purple-bold,
