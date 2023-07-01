@@ -188,6 +188,7 @@ header nav a {
   gap: 28px;
   font-weight: 700;
   font-size: 2rem;
+  max-width: min(70%, 500px);
   font-variation-settings: "WONK" 1, "SOFT" 55, "opsz" 78;
 }
 
@@ -217,4 +218,11 @@ footer {
 }
 .red-bold {
   color: #ed5051;
+}
+
+.mate-text {
+  color: #f06866;
+}
+.kivra-text {
+  color: #76c82e;
 }
