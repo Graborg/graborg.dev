@@ -175,7 +175,7 @@ header nav a {
   font-size: 2.25rem;
   margin: 0;
   padding: 4px 72px 4px 8px;
-  width: fit-content;
+  width: max-content;
   box-shadow: 0 0 0 8px hsl(169, 40%, 67%), 8px 8px 0 8px hsl(1, 82%, 67%);
 }
 
@@ -189,6 +189,7 @@ header nav a {
   font-weight: 700;
   font-size: 2rem;
   max-width: min(70%, 500px);
+  min-width: min-content;
   font-variation-settings: "WONK" 1, "SOFT" 55, "opsz" 78;
 }
 
