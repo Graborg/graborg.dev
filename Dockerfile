@@ -21,6 +21,10 @@ ARG RUNNER_IMAGE="debian:${DEBIAN_VERSION}"
 
 FROM ${BUILDER_IMAGE} as builder
 
+# bullseye is EOL, so its packages now live on archive.debian.org
+RUN sed -i -e "s|deb.debian.org|archive.debian.org|g" -e "s|security.debian.org|archive.debian.org|g" \
+    -e "/bullseye-updates/d" /etc/apt/sources.list
+
 # install build dependencies
 RUN apt-get update -y && apt-get install -y build-essential git \
     && apt-get clean && rm -f /var/lib/apt/lists/*_*
@@ -67,6 +71,10 @@ RUN mix release
 # start a new build stage so that the final image will only contain
 # the compiled release and other runtime necessities
 FROM ${RUNNER_IMAGE}
+
+# bullseye is EOL, so its packages now live on archive.debian.org
+RUN sed -i -e "s|deb.debian.org|archive.debian.org|g" -e "s|security.debian.org|archive.debian.org|g" \
+    -e "/bullseye-updates/d" /etc/apt/sources.list
 
 RUN apt-get update -y && apt-get install -y libstdc++6 openssl libncurses5 locales \
   && apt-get clean && rm -f /var/lib/apt/lists/*_*
