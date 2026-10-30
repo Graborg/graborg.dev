@@ -1,4 +1,14 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:recommended"]
+  "extends": ["config:recommended"],
+  "minimumReleaseAge": "7 days",
+  "internalChecksFilter": "strict",
+  "packageRules": [
+    {
+      "description": "Group all patch updates into one automerged PR",
+      "matchUpdateTypes": ["patch"],
+      "groupName": "all patch dependencies",
+      "automerge": true
+    }
+  ]
 }
