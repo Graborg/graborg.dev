@@ -5,9 +5,9 @@
   "internalChecksFilter": "strict",
   "packageRules": [
     {
-      "description": "Group all patch updates into one automerged PR",
-      "matchUpdateTypes": ["patch"],
-      "groupName": "all patch dependencies",
+      "description": "Group all minor and patch updates into one automerged PR",
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "all non-major dependencies",
       "automerge": true
     }
   ]
